@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Metadata Generator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap">
+
+</head>
+<body>
+    <div class="pink-header">
+        <h1>NFT Metadata Generator</h1>
+    </div>
+
+    <div class="container">
+        <div class="left-box">
+            <!-- Your left content here -->
+            <p>Hi!<br><br>Fill out all boxes.<br><br>Image link should be IPFS.<br><br>Assigning trait names and values to NFTs<br><br>establish the asset's value, rarity<br><br> and individuality.<br><br>Click Generate Metadata<br><br>than download JSON file.<br><br></p>
+        </div>
+
+        <div class="form-container">
+            <div class="form-section" id="name-section">
+                <label for="name">Name:</label>
+                <div class="input-container">
+                    <input type="text" id="name" placeholder="Enter name of your NFT">
+                </div>
+            </div>
+
+            <div class="form-section" id="link-section">
+                <label for "image-link">Image Link:</label>
+                <div class="input-container">
+                    <input type="text" id="image-link" placeholder="ipfs://bafybeifg7byk5qz2hcsodcsrwpr6pketfd6fn4ki4wjbe6kkptu754rjhm/jqbwindow.jpg">
+                </div>
+            </div>
+
+            <div class="form-section" id="description-section">
+                <label for="description">Description:</label>
+                <div class="input-container">
+                    <textarea id="description" rows="4" placeholder="Enter description of your NFT"></textarea>
+                </div>
+            </div><br>
+            <div id="traits-form">
+ 
+                <div class="form-section">
+                    <input class="right-half" type="text" id="trait1-name" placeholder="Enter Trait Name:here" >
+                    <input class="left-half" type="text" id="trait1-value" placeholder="Enter Trait Value:here">
+                </div><br>
+                <div class="form-section">
+                    <input class="right-half" type="text" id="trait2-name" placeholder="Enter Trait Name:here">
+                    <input class="left-half" type="text" id="trait2-value" placeholder="Enter Trait Value:here">
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button id="generate-metadata" type="button">Generate Metadata</button>
+            </div>
+
+            <div id="download-link" style="display: none;">
+                <a id="metadata-download" download="metadata.json" href="#">Download Metadata JSON</a>
+            </div>
+        </div>
+        <div class="right-box">
+            <!-- Your right content here -->
+            <p>Preferable place is IPFS to have<br>decentralization and censorship resistance<br>and there are several ways to do it.<br><br>Example is <a href="https://nft.storage">nft.storage</a>.<br><br>After generating/downloading<br>metadata.json file,<br><br>upload it to internet.<br>(again preferable IPFS)<br><br>That link use as TokenURI<br>(Your custom metadata)<br><a href="https://becomingweb3.dev/custom/">HERE</a><br>while minting.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>2023 brought by jaqbek. All rights left.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
